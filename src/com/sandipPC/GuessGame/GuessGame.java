@@ -1,3 +1,5 @@
+package com.sandipPC.GuessGame;
+
 public class GuessGame {
     Player p1;
     Player p2;
@@ -46,8 +48,9 @@ public class GuessGame {
                 break; // game over, so break out of the loop
             } else {
 // we must keep going because nobody got it right!
-                System.out.println("Players will have to try again.");
+                System.out.println("Players will have to try again, as Guess is wrong.");
             } // end if/else
+
         }
     }
 }
