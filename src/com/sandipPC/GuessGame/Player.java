@@ -1,3 +1,5 @@
+package com.sandipPC.GuessGame;
+
 public class Player {
     int number = 0; // where the guess goes
     public void guess() {
