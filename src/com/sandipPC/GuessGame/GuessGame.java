@@ -1,13 +1,13 @@
 package com.sandipPC.GuessGame;
 
 public class GuessGame {
-    Player p1;
-    Player p2;
-    Player p3;
+    Player P1;
+    Player P2;
+    Player P3;
     public void startGame() {
-        p1 = new Player();
-        p2 = new Player();
-        p3 = new Player();
+        P1 = new Player();
+        P2 = new Player();
+        P3 = new Player();
 
         int guessp1 = 0;
         int guessp2 = 0;
@@ -21,14 +21,14 @@ public class GuessGame {
         System.out.println("I'm thinking of a number between 0 and 9...");
         while (true) {
             System.out.println("Number to guess is\t" + targetNumber);
-            p1.guess();
-            p2.guess();
-            p3.guess();
-            guessp1 = p1.number;
+            P1.guess();
+            P2.guess();
+            P3.guess();
+            guessp1 = P1.number;
             System.out.println("Player one guessed\t"+guessp1);
-            guessp2 = p2.number;
+            guessp2 = P2.number;
             System.out.println("Player two guessed\t"+guessp2);
-            guessp3 = p3.number;
+            guessp3 = P3.number;
             System.out.println("Player three guessed\t"+guessp3);
             if (guessp1 == targetNumber) {
                 p1isRight = true;
